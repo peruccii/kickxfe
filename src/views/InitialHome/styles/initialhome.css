@@ -1,0 +1,232 @@
+/* Global styles */
+
+
+.body_initial {
+  background-image: url('../../../assets/bgInitialHome.png');
+  background-repeat: repeat;
+  background-size: auto 32%;
+  background-position: center top;
+  height: 3240px;
+}
+
+@font-face {
+  font-family: fontInitialHome;
+  src: url(../../../fonts/Urban.ttf);
+}
+
+@font-face {
+  font-family: Helvelica;
+  src: url(../../../fonts/Helvetica.otf);
+}
+
+/* First screen styles */
+.title_initialhome {
+  text-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.10), 0px 12px 27px 0px rgba(0, 0, 0, 0.10), 0px 48px 48px 0px rgba(0, 0, 0, 0.09), 0px 109px 65px 0px rgba(0, 0, 0, 0.05), 0px 194px 77px 0px rgba(0, 0, 0, 0.01), 0px 303px 85px 0px rgba(0, 0, 0, 0.00);
+  font-family: fontInitialHome;
+  font-size: 180px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: -10px;
+  -webkit-text-stroke: 6px black;
+  background: linear-gradient(180deg, #F1A1EC 0%, #FCDDFA 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+
+.titlewolrd_initialhome {
+  margin-bottom: -195px;
+  font-size: 140px;
+  font-family: Helvelica;
+}
+
+.subtitle_initialhome {
+  color: #969696;
+  text-align: center;
+  font-family: Audiowide;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  flex-shrink: 0;
+  margin-bottom: 25px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  
+  min-height: 100vh;
+}
+
+.center-content {
+  text-align: center;
+  max-width: 600px;
+  padding: 20px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.button_initialhome {
+  padding: 20px 22px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 45px;
+  background: linear-gradient(129deg, rgb(0, 0, 0) 0%, #000000 97.92%);
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Second screen styles */
+.container-second {
+  height: 800px;
+}
+
+.square {
+  width: 339px;
+  height: 339px;
+  flex-shrink: 0;
+  background-color: #1C9BD1;
+  margin: 20px auto;
+}
+
+.title2_initialhome {
+  color: #969696;
+  text-align: center;
+  font-family: Audiowide;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+/*3 page*/
+
+.container3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.center-content3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+}
+
+.top-left,
+.top-right,
+.bottom-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.square3 {
+  width: 200px;
+  height: 200px;
+  background-color: #3498db;
+  margin: 0 auto;
+}
+
+.topic {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.topic img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .center-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Responsiveness */
+@media screen and (max-width: 600px) {
+  .title_initialhome {
+    font-size: 4rem;
+    -webkit-text-stroke: 3px black;
+    margin-bottom: -5px;
+  }
+
+  .titlewolrd_initialhome {
+    margin-bottom: -145px;
+    font-size: 3rem;
+  }
+
+  .subtitle_initialhome {
+    font-size: 1rem;
+  }
+
+  .container {
+    margin-top: 50px;
+  }
+
+  .square {
+    width: 200px;
+    height: 200px;
+  }
+
+  .title2_initialhome {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+
+  body {
+    background-image: url('../../../assets/bgInitialHome.png');
+    background-repeat: repeat;
+    background-size: auto 15%;
+    background-position: center top;
+
+  }
+  .title_initialhome {
+    font-size: 6rem;
+    -webkit-text-stroke: 4px black;
+    margin-bottom: 0;
+  }
+
+  .titlewolrd_initialhome {
+    margin-bottom: -105px;
+    font-size: 4.2rem;
+  }
+
+  .subtitle_initialhome {
+    margin-top: 0px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .container {
+    margin-top: 20px;
+  }
+
+  .square {
+    width: 120px;
+    height: 120px;
+  }
+
+  .title2_initialhome {
+    font-size: 16px;
+  }
+
+  .center-content {
+    padding-top: 200px;
+    justify-content: center;
+    align-items: center;
+  }
+}

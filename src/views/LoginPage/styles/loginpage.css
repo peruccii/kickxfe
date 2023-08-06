@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+@font-face {
+  font-family: CASCADIAMONOPL;
+  src: url(../../../fonts/CASCADIAMONOPL.TTF);
+}
+
+.containerLogin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: white;
+}
+
+.squareLogin {
+  width: 50vw;
+  height: 100vh;
+  background: linear-gradient(180deg, #000 0%, #292929 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-size: 24px;
+  border-radius: 0px 30px 30px 0px;
+}
+.squareLogin h1 {
+  font-family: Audiowide;
+  font-size: 120px;
+}
+
+.login-form {
+  margin-left: 30px;
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-form h2 {
+  color: #000;
+  font-family: 'Inter', sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.login-form p {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.46);
+  margin-bottom: 30px;
+  margin-top: -30px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  align-items: center;
+
+}
+
+.label_login {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  align-items: flex-start !important;
+  margin-right: 340px;
+  font-family: CASCADIAMONOPL;
+}
+
+.label_loginemail{
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  align-items: flex-start !important;
+  margin-right: 366px;
+  font-family: CASCADIAMONOPL;
+}
+
+.inputs_login {
+  width: 415px;
+  height: 40px;
+  border-radius: 20px;
+  border: 2px solid #DFDFDF;
+  background: #FFF;
+  padding: 10px;
+  font-size: 16px;
+  transition: all 0.5s ease-in-out;
+  font-family: CASCADIAMONOPL;
+}
+
+.inputs_login::placeholder{
+  color: rgba(0, 0, 0, 0.28);
+  font-weight: 350;
+}
+
+.inputs_login:focus {
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.07), 0px 1px 2px 0px rgba(0, 0, 0, 0.07), 0px 3px 3px 0px rgba(0, 0, 0, 0.06), 1px 7px 4px 0px rgba(0, 0, 0, 0.04), 1px 12px 5px 0px rgba(0, 0, 0, 0.01), 2px 19px 5px 0px rgba(0, 0, 0, 0.00);
+}
+
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+  margin-right: 0px;
+}
+
+
+
+.forgot-password {
+  text-decoration: none;
+  color: blue;
+  margin-left: 200px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.signin_button_login,
+.google_button_login {
+  width: 300px;
+  height: 40px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.signin_button_login {
+  background-color: #000000;
+  width: 415px;
+  height: 60px;
+  border-radius: 20px;
+  color: #fff;
+}
+
+.google_button_login {
+  background-color: transparent;
+  border: 2px solid grey;
+  width: 415px;
+  height: 60px;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+p:last-child {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+  .containerLogin {
+    flex-direction: column;
+  }
+
+  .squareLogin {
+    width: 98%;
+    border-radius: 0;
+    margin-top: 5px;
+    border-radius: 15px;
+  }
+
+  .login-form {
+    margin: 20px;
+  }
+
+  .inputs_login {
+    width: 90%;
+  }
+
+  .button-container {
+    width: 100%;
+  }
+
+  .signin_button_login,
+  .google_button_login {
+    width: 100%;
+  }
+
+  .forgot-password{
+    margin-left: 170px;
+  }
+}
